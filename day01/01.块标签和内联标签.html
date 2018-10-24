@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>块标签和内联标签</title>
+		<style type="text/css">
+			
+			div{
+				background-color: red;
+				width: 200px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			1.块标签 
+			  所谓的块元素就是会独占一行的元素，无论他的内容有多少，他都会独占一行
+			   常见的块标签 div p h1
+			  div元素没有任何的语义，就是一个纯粹的块元素，并且不会为它里面的元素设置任何样式
+			  主要用来给页面进行布局
+			2.内联标签 
+			  所谓的行内元素，指的是只占自身大小的元素，不会占用一行
+			   常见的内联标签span a iframe img
+			  span没有任何的语义，主要用来选中文字，然后为文字设置样式
+			  
+			 一般情况下指使用块元素包含内联元素，不会使用内联元素包含块元素。
+			 
+			 a元素可以包含任何元素除了他本身
+			 p元素不可以包含任何块元素
+			  
+        -->
+		<div>这是一个div标签</div>
+		<div>这是一个div标签</div>
+		
+		<span>这是一个span标签</span>
+	</body>
+</html>
