@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>常用的选择器</title>
+		<style type="text/css">
+			/*1. 元素选择器*/
+			/*div{
+				background-color: red;
+			}*/
+			/*2.id选择器*/
+			/*#d1{
+				font-size: 20px;
+			}*/
+			/*3.类型选择器
+			 *类型选择器可以重复
+			 *一个标签可以设置多个类型选择器 ，多个值之间用空格隔开
+			 * */
+			/*.p1{
+				font-size: 20px;
+			}
+			.p2{
+				color: red;
+			}*/
+			/*组合选择器
+			 *通过组合选择器可以同时选中多个选择器对应的元素
+			 * 语法：选择器1，选择器2，选择器N... 
+			 * */
+			/*#d2,.c1{
+				color: blue;
+				font-size: 40px;
+			}*/
+			/*统配选择器
+			 *选择页面中的所有元素 
+			 * */
+			/**{
+				color: yellow;
+			}*/
+			/*复合选择器(交集选择器)
+			 *作用：可以选中同时满足多个选择器的元素
+			 *语法：选择器1 选择器2 选择器N...
+			 * */
+			div .s1{
+				color: chartreuse;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div> 元素选择器</div>
+		<div id="d1" > id选择器</div>
+		<div> 元素选择器</div>
+		<hr />
+		<p class="p1">类型选择器1</p>
+		<p class="p1 p2">类型选择器2</p>
+		<p class="p1">类型选择器3</p>
+		<hr />
+		<div class="c1">组合选择器</div>
+		<div id="d2">组合选择器</div>
+		<hr />
+		<div>
+			
+			<span class="s1">交集选择器1</span>
+			<span>交集选择器2</span>
+			<p >baidu.com</p>
+		</div>
+	</body>
+</html>
