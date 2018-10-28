@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>a伪类的优先级</title>
+	
+		<style type="text/css">
+			
+			a:link{
+				color: yellow;
+			}
+			a:visited{
+				color: red;
+			}
+			a:hover{
+				color: green;
+			}
+			a:active{
+				color:blue;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+	
+		<!--
+        	作者：xum890312@163.com
+        	时间：2018-10-27
+        	描述：
+        	a的伪类标签
+        	:link 普通的
+        	:visited 访问过的
+        	:hover 鼠标悬浮
+        	:active 点击
+        	因为都是伪类选择器，所以他们的优先级相同，生效的顺序就是书写的顺序，
+        	因此必须按照指定的顺序书写，否则会实效。
+        	正确的书写顺序为link visited hover active
+        	如果hover放在active之后，active会失效
+        -->
+		<a href="http://www.baidu.com">访问过的</a>
+		<br /><br />
+		<a href="http://www.baidu123.com">没有访问过的</a>
+	</body>
+</html>
