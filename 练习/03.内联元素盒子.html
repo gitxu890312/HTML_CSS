@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.s1{
+				background-color: red;
+				/**
+				 * 内联元素的宽、高不起作用
+				 */
+				/*width: 100px;
+				height: 100px;*/
+				
+				/**
+				 * border 会生效，但是垂直方向的边框不会影响页面的布局
+				 */
+				/*border: 100px blue solid;*/
+				
+				/**
+				 * 左右内边距生效的
+				 */
+				/*padding-left: 100px;
+				padding-right: 100px;*/
+				/**
+				 * 会生效，但是不会影响布局
+				 */
+				/*padding-bottom: 100px;
+				padding-top: 100px;*/
+				/**
+				 * 会生效并影响布局
+				 */
+				/*margin-left: 100px;
+				margin-right: 100px;*/
+				/**
+				 * 不会生效
+				 */
+				margin-bottom: 100px;
+				margin-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="s1">我是span</span>
+		<span class="s2">我是span1</span>
+		<div class="box1">我是div</div>
+	</body>
+</html>

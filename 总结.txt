@@ -1,0 +1,10 @@
+
+块元素与内联元素
+块元素独占一行，经常用来布局
+内联元素不会独占一行，经常用来选中设计样式
+
+块元素与内联元素转换
+display:block inline inline-block
+
+块元素 div p ul h1
+内联元素  span a img
